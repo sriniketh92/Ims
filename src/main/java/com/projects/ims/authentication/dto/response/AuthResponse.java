@@ -1,9 +1,15 @@
 package com.projects.ims.authentication.dto.response;
 
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
 public class AuthResponse {
 
     private String accessToken;
     private String refreshToken;
+    private String tokenType;
     private String userName;
     private String roleName;
     private String message;
