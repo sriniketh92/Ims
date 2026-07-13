@@ -26,7 +26,7 @@ public class User extends BaseEntity {
     private String password;
     @Column(nullable = false,unique = true)
     private String contact;
-    private boolean enabled = true;
-    private boolean accountNonLocked =  true;
+    private boolean enabled;
+    private boolean accountNonLocked;
 
 }
